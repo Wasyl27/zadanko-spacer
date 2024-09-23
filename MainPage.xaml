@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_132321213213.MainPage">
+
+   
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text="Spacer po plantach"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="28"
+                VerticalTextAlignment="Center" />
+            <Image
+                Source="elektryk.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="elektryk" />
+            <Label
+                x:Name="polubienia"
+                Text="Polubien: 0"
+                WidthRequest="130"
+                SemanticProperties.Hint="Ile razy polubione"
+                HorizontalOptions="End" />
+            <Label
+                Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                WidthRequest="130"
+                SemanticProperties.Hint="Ile razy polubione" />
+            <HorizontalStackLayout Padding="35">
+                <Button
+                    Margin="5"
+                    x:Name="CounterBtn"
+                    Text="Lubie to"
+                    WidthRequest="130"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCounterClicked" />
+
+                <Button
+                    Margin="5"                     
+                    x:Name="CounterBtn"
+                    Text="Nie lubie"
+                     WidthRequest="130"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCounterClicked" />
+
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+    
+
+</ContentPage>
